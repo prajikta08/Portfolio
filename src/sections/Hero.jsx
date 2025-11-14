@@ -68,7 +68,7 @@ const Hero = () => {
           <ambientLight intensity={1.5} />
           <directionalLight position={[5, 5, 5]} intensity={2} />
           <pointLight position={[0, 2, 0]} intensity={1.2} />
-          <Environment preset="sunset" />
+          {/* < Environment preset="sunset" />*/}
 
           {/* Hide robot on very tiny screens */}
           {!isVerySmall && (
