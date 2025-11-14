@@ -10,7 +10,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function Robot(props) {
-  const { nodes, materials } = useGLTF('/models/robot.glb')
+  const { nodes, materials } = useGLTF('/models/Robot.glb')
   return (
     <group {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, -Math.PI / 2]}>
@@ -28,4 +28,4 @@ export function Robot(props) {
   )
 }
 
-useGLTF.preload('/models/robot.glb')
+useGLTF.preload('/models/Robot.glb')

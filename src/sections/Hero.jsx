@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import HeroText from "../components/HeroText";
 import BackGround from "../components/BackGround";
-import { Robot } from "../components/robot";
+import { Robot } from "../components/Robot";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, Environment } from "@react-three/drei";
 import { useMediaQuery } from "react-responsive";
