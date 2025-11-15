@@ -52,8 +52,8 @@ const Hero = () => {
         <HeroText className="relative z-10" />
 
 
-        {/* BACKGROUND */}
-        <BackGround />
+        {/* <BackGround /> */}
+        
 
         {/* 3D CANVAS */}
         <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
