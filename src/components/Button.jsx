@@ -7,7 +7,7 @@ import { HiOutlineMail } from "react-icons/hi";
 const Button = () => {
   return (
     <StyledWrapper>
-      <div className="flex flex-row items-center mt-5 text-center md:mt-40 c-space 
+      <div className="flex flex-row items-center mt-5 text-center md:mt-30 c-space 
                 justify-center md:justify-start gap-4">
 
         <a href="https://drive.google.com/file/d/1b3lutXKX0qocWcNs3BQV00lIqrR0z51C/view?usp=sharing" target="_blank" rel="noopener noreferrer">

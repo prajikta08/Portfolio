@@ -5,7 +5,7 @@ import Button from './Button';
 
 const HeroText = () => {
   return (
-    <div className='z-10 mt-20 text-center md:mt-40 md:text-left rounded-3xl bg-clip-text'>
+    <div className='z-10 mt-20 text-center md:mt-15 md:text-left rounded-3xl bg-clip-text'>
 
       {/* Desktop View */}
       <div className='flex-col hidden md:flex c-space'>
