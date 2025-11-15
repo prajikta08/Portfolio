@@ -20,14 +20,14 @@ const HeroText = () => {
       </div>
 
       {/* Mobile View */}
-      <div className="flex flex-col items-center text-center md:hidden c-space mt-10 space-y-4">
+      <div className="flex flex-col items-center text-center md:hidden c-space mt-20 mb-10 space-y-4">
 
-        <p className="text-3xl font-semibold">Hi I'm Prajikta</p>
+        <p className="text-4xl font-semibold mb-4">Hi I'm Prajikta</p>
 
         <div className="space-y-2">
-          <p className="text-xl text-neutral-200">- a web developer,</p>
+          <p className="text-2xl text-neutral-200 mb-7">- a web developer,</p>
 
-          <p className="text-lg text-amber-100">
+          <p className="text-lg text-amber-100 mb-3">
             who loves bringing ideas to life on the internet
           </p>
 

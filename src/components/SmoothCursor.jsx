@@ -4,11 +4,13 @@ import { useEffect, useRef, useState } from "react";
 import { motion, useSpring } from "motion/react";
 
 // Default cursor icon
+
+
 const DefaultCursorSVG = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width={50}
+      width={40}
       height={54}
       viewBox="0 0 50 54"
       fill="none"
