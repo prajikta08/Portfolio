@@ -41,10 +41,9 @@ const HeroText = () => {
         </div>
       </div>
 
-      <div className=' md:flex buttons-container'>
-        <Button />
-
-      </div>
+      <div className="flex justify-center md:justify-start buttons-container">
+  <Button />
+</div>
 
     </div>
 

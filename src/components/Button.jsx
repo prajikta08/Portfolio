@@ -7,33 +7,35 @@ import { HiOutlineMail } from "react-icons/hi";
 const Button = () => {
   return (
     <StyledWrapper>
-      <div className='flex items-center mt-15 text-center md:mt-40 flex-row c-space '>
-  <a href="https://drive.google.com/file/d/1b3lutXKX0qocWcNs3BQV00lIqrR0z51C/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-    <button className="button">
-      <div className="blob1" />
-      <div className="blob2" />
-      <div className="inner">My Resume</div>
-    </button>
-  </a>
+      <div className="flex flex-row items-center mt-5 text-center md:mt-40 c-space 
+                justify-center md:justify-start gap-4">
 
-  <a href="https://github.com/prajikta08" target="_blank" rel="noopener noreferrer">
-    <button className="button">
-      <div className="blob1" />
-      <div className="blob2" />
-      <div className="inner"> <FaGithub size={18} /></div>
-    </button>
-  </a>
+        <a href="https://drive.google.com/file/d/1b3lutXKX0qocWcNs3BQV00lIqrR0z51C/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+          <button className="button">
+            <div className="blob1" />
+            <div className="blob2" />
+            <div className="inner">My Resume</div>
+          </button>
+        </a>
 
-  <a href="https://www.linkedin.com/in/prajikta-sati-40aa34283/"target="_blank" rel="noopener noreferrer" >
-  <button className="button">
-    <div className="blob1" />
-    <div className="blob2" />
-    <div className='inner'><FaLinkedin size={18} /></div>
-  </button> </a>
+        <a href="https://github.com/prajikta08" target="_blank" rel="noopener noreferrer">
+          <button className="button">
+            <div className="blob1" />
+            <div className="blob2" />
+            <div className="inner"> <FaGithub size={18} /></div>
+          </button>
+        </a>
 
-</div>
+        <a href="https://www.linkedin.com/in/prajikta-sati-40aa34283/" target="_blank" rel="noopener noreferrer" >
+          <button className="button">
+            <div className="blob1" />
+            <div className="blob2" />
+            <div className='inner'><FaLinkedin size={18} /></div>
+          </button> </a>
 
-      
+      </div>
+
+
     </StyledWrapper>
   );
 }
@@ -120,9 +122,15 @@ const StyledWrapper = styled.div`
      ======================= */
   @media (max-width: 768px) {
     .div {
-      justify-content: center;     /* center horizontally */
-      flex-wrap: wrap;             /* allow wrap if needed */
-      gap: 8px;              /* consistent spacing */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 30px !important;
+      margin-left: auto;
+      margin-right: auto;
+   
     }
 
     .button {
