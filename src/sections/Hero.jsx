@@ -5,6 +5,8 @@ import { Robot } from "../components/Robot";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, Environment } from "@react-three/drei";
 import { useMediaQuery } from "react-responsive";
+import { useGLTF } from '@react-three/drei';
+useGLTF.preload('/robot.glb');
 
 function AnimatedRobot({ targetPosition = [2.3, -1, 0], scale }) {
   const ref = useRef();
