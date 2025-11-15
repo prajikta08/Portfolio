@@ -8,14 +8,14 @@ const Projects = () => {
       <h2 className="text-heading c-space">My Projects</h2>
       <div className="bg-gradient-to-r from-transparent via-yellow-200 to-transparent h-[2px] w-full mt-12"></div>
 
-      <Marque pauseOnHover className="mt-10">
+      <Marque pauseOnHover className="mt-10 gap-x-6">
   {myProjects.map((project) => (
     <a
       href={project.href}
       key={project.id}
       target="_blank"
       rel="noopener noreferrer"
-      className="block"
+      className="block mx-2"
     >
       <div
         className="bg-white/10 backdrop-blur-md shadow-lg rounded-xl p-4 w-[350px] h-[250px] 
