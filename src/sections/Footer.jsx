@@ -9,11 +9,12 @@ const Footer = () => {
       <h2 className="text-heading mb-10">Contact</h2>
       <div className="bg-gradient-to-r from-transparent via-yellow-200 to-transparent h-[2px] w-full mt-10 mb-5"></div>
       
-      <div className="flex justify-between items-start">
+      <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-10">
+
 
   {/* LEFT SIDE: Heading + Buttons */}
   <div>
-    <p className='text-7xl font-bold mb-5 text-amber-100'>Get in Touch :</p>
+    <p className='text-4xl md:text-7xl font-bold mb-5 text-amber-100'>Get in Touch :</p>
 
     <StyledWrapper>
       <div className="flex flex-row items-center gap-3">
@@ -52,6 +53,8 @@ const Footer = () => {
         </a>
 
       </div>
+
+      
     </StyledWrapper>
   </div>
 
@@ -59,7 +62,7 @@ const Footer = () => {
   <img
     src="/assets/work.png"
     alt="work"
-    className="w-[300px] max-w-full"
+    className="w-[250px]  max-w-full md:w-[300px]"
   />
 
 </div>
@@ -167,6 +170,30 @@ const StyledWrapper = styled.div`
 
   .button:hover .inner::before {
     opacity: 0;
+  }
+     /* ------------- 🔥 MOBILE ONLY FIX ------------ */
+  @media (max-width: 768px) {
+
+    .button {
+      transform: scale(0.85);     /* smaller buttons */
+      margin-right: 0;
+      
+    }
+
+    .inner {
+      padding: 6px 10px;          /* smaller inside padding */
+      font-size: 0.9rem;          /* smaller text */
+    }
+
+    .blob1 {
+      width: 35px;                /* smaller glow */
+      box-shadow: -6px 6px 18px #f7d75a3d;
+    }
+
+    svg {
+      width: 14px;
+      height: 14px;               /* smaller icons */
+    }
   }
 `;
 

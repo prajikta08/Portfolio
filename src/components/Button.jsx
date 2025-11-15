@@ -7,7 +7,7 @@ import { HiOutlineMail } from "react-icons/hi";
 const Button = () => {
   return (
     <StyledWrapper>
-      <div className='flex items-center mt-20 text-center md:mt-40 flex-row c-space'>
+      <div className='flex items-center mt-15 text-center md:mt-40 flex-row c-space '>
   <a href="https://drive.google.com/file/d/1b3lutXKX0qocWcNs3BQV00lIqrR0z51C/view?usp=sharing" target="_blank" rel="noopener noreferrer">
     <button className="button">
       <div className="blob1" />
@@ -39,10 +39,18 @@ const Button = () => {
 }
 
 const StyledWrapper = styled.div`
+  /* =======================
+     DESKTOP DEFAULT STYLING
+     ======================= */
+  .flex {
+    justify-content: center;
+    align-items: center;
+  }
+
   .button {
     cursor: pointer;
     margin-right: 16px;
-    font-size: 1.1rem;   /* smaller text */
+    font-size: 1.1rem;
     border-radius: 14px;
     border: none;
     padding: 2px;
@@ -55,7 +63,6 @@ const StyledWrapper = styled.div`
     display: inline-block;
     margin-right: 16px;
   }
-
   a:last-child {
     margin-right: 0;
   }
@@ -81,62 +88,58 @@ const StyledWrapper = styled.div`
     box-shadow: 0 0 8px #ffffff15;
   }
 
-  /* 🔥 Yellow Glow Blob */
   .blob1 {
     position: absolute;
-    width: 50px;                 /* smaller */
+    width: 50px;
     height: 100%;
     border-radius: 16px;
     bottom: 0;
     left: 0;
     background: radial-gradient(
       circle 50px at 0% 100%,
-      #ffe66d,          /* warm yellow */
-      #f2c23daa,        /* golden glow */
+      #ffe66d,
+      #f2c23daa,
       transparent
     );
     box-shadow: -10px 10px 25px #f7d75a3d;
-    transition: background 0.3s, box-shadow 0.3s;
-  }
-
-  .button:hover .blob1 {
-    box-shadow: -5px 5px 18px #00000066;
+    transition: 0.3s;
   }
 
   .inner {
-    padding: 10px 18px;   /* smaller */
+    padding: 10px 18px;
     border-radius: 12px;
     color: #fff;
     z-index: 3;
     position: relative;
     background: radial-gradient(circle 70px at 80% -50%, #666666, #0f1111);
-    transition: background 0.3s;
+    transition: 0.3s;
   }
 
-  .button:hover .inner {
-    background: radial-gradient(circle 70px at 80% -50%, #333333, #0f0f0f);
-  }
+  /* =======================
+         MOBILE FIXES
+     ======================= */
+  @media (max-width: 768px) {
+    .div {
+      justify-content: center;     /* center horizontally */
+      flex-wrap: wrap;             /* allow wrap if needed */
+      gap: 8px;              /* consistent spacing */
+    }
 
-  .inner::before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    border-radius: 12px;
-    background: radial-gradient(
-      circle 50px at 0% 100%,
-      #ffe66d1a,
-      #f4c54211,
-      transparent
-    );
-    position: absolute;
-    transition: opacity 0.3s;
-  }
+    .button {
+      margin-right: 0;
+      transform: scale(0.85);      /* smaller buttons */
+    }
 
-  .button:hover .inner::before {
-    opacity: 0;
+    .inner {
+      padding: 8px 14px;           /* smaller padding */
+      font-size: 0.9rem;           
+    }
+
+    .blob1 {
+      width: 35px;                 /* smaller glow */
+    }
   }
 `;
+
 
 export default Button;

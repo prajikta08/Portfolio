@@ -33,10 +33,10 @@ const Navbar = () => {
       <div className='mx-auto c-space max-w-7xl'>
         <div className='flex items-center justify-between py-2 sm:py-0'>
           <a href='/' className='text-xl font-bold transition-colors text-neutral-400 hover:text-white'>Prajikta</a>
-          <button onClick={() => setIsOpen(!isOpen)} className='flex cursor-pointer text-neutral-400 hover:text-white focus:outline-none sm:hidden'>
+          <button onClick={() => setIsOpen(!isOpen)} className='flex cursor-pointer text-neutral-400 hover:text-white focus:outline-none md:hidden'>
             <img src={isOpen ? "assets/close.svg" : "assets/menu.svg" }className="w-6 h-6"  alt='toggle'/>
           </button>
-          <nav className='hidden sm:flex'>
+          <nav className='hidden md:flex'>
             <Navigation />
           </nav>
         </div>
