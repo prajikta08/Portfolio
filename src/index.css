@@ -179,3 +179,14 @@ html {
 html, body {
   overflow-x: hidden;
 }
+button,
+.btn {
+  white-space: nowrap;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: nowrap !important;
+}
+

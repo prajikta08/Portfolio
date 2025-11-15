@@ -29,7 +29,7 @@ const HeroText = () => {
             
           </div>
         </div>
-        <div className='hidden md:flex'>
+        <div className='hidden md:flex buttons-container'>
           <Button />
 
         </div>
