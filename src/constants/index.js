@@ -147,18 +147,17 @@ export const myProjects = [
   },
   {
     id: 5,
-    title: "WordPress Custom Theme",
+    title: "SpendAudit",
     description:
-      "A fully customizable WordPress theme optimized for performance and SEO.",
+      "An instant AI tool spend auditor for small teams.",
     subDescription: [
-      "Developed a responsive WordPress theme using HTML5, CSS3, and JavaScript.",
-      "Integrated Tailwind CSS for modern styling and UI enhancements.",
-      "Optimized SEO and page speed using Vite.js for fast builds.",
-      "Implemented custom widgets and plugin compatibility for extended functionality.",
+      "Enter your current AI subscriptions — Cursor, Claude, ChatGPT, GitHub Copilot, and more",
+      "and get a per-tool breakdown of where you're overspending and what to switch to",
+      "Built for engineering managers and CTOs at 5–25 person startups who pay the AI bills themselves and have been meaning to audit the stack at some point."
     ],
-    href: "",
+    href: "https://ai-spend-audit-jcqeuy4lu-prajikta08s-projects.vercel.app/",
     logo: "",
-    image: "/assets/projects/wordpress-theme.jpg",
+    image: "/assets/projects/i1.png",
     tags: [
       {
         id: 1,
