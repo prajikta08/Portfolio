@@ -4,6 +4,7 @@ import { Robot } from "../components/Robot";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { useMediaQuery } from "react-responsive";
 import { useGLTF } from "@react-three/drei";
+import  AstroRunner  from "../components/AstroRunner"
 
 useGLTF.preload("/robot.glb");
 
@@ -76,7 +77,9 @@ const Hero = () => {
 
       {/* MOBILE SPACING FIX */}
       <div className="w-full mt-20 z-1 md:hidden" />
+      
     </section>
+
   );
 };
 

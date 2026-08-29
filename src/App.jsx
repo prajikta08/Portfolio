@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from "./sections/Navbar"
 import Hero from './sections/Hero'
+import AstroRunner from './components/AstroRunner'
 import About from './sections/About'
 import Projects from './sections/Projects'
 import Footer from './sections/Footer'
@@ -12,6 +13,7 @@ const App = () => {
       <SmoothCursor />
       <Navbar />
       <Hero />
+      <AstroRunner /> 
       <About />
       <Projects />
       <Footer />
